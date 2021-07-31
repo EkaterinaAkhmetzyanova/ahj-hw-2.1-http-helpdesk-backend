@@ -27,8 +27,9 @@ class Tickets {
   }
 }
 
-const firstTicket = new Tickets(uuid.v4(), 'to finilize the agreement', 'to revise clause 4', false, new Date());
-tickets.push(firstTicket);
+const firstTicket = new Tickets(uuid.v4(), 'to finalize the agreement', 'to revise clause 4', false, new Date());
+const secondTicket = new Tickets(uuid.v4(), 'to meet with John', 'to find interesting place', false, new Date());
+tickets.push(firstTicket, secondTicket);
 
 app.use(koaBody({
     urlencoded: true,
